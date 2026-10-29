@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EBFFDC;
+}
+
+#mainstyle {
+	text-align: left;
+	font-size: 3rem;
+	color:#274DEA;
+	width: 550px;
+	height: 100px;
+	padding-left: 10px;
+}
+
+.mainstyle img{
+	display: flex;
+	width: 49%;
+	float: right;
+}
+	
+
+.navigationbar ul {
+	list-style-type: none;
+	background-color: #274DEA;
+	display: flex;
+	text-align: left;
+	font-size: 2rem;
+}
+
+.navigationbar a {
+	color: #FFF197;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.navigationbar a:hover {
+	background-color: #FFF197;
+	color: #274DEA;
+}
+
+@media (max-width: 600px) {
+	.navigationbar ul {
+		flex-direction: column;
+	}
+}
+
+
+h2 {
+	text-align: left;
+	font-size: 2rem;
+	color:#274DEA;
+	padding-left: 10px;
+
+}
+
+h3 {
+	text-align: left;
+	font-size: 1.7rem;
+	color:#274DEA;
+	padding-left: 10px;
+}
+
+/*I struggled a bit with all of this so at the end the way that was easiest for me
+and worked was to split the entry into these small pieces, inlcuding <p>*/
+
+.story {
+	background-color: #EBFFDC;
+	color: #274DEA;
+}
+
+.story div {
+	width: 2000px;
+	height: 200px;
+	margin: 10px;
+	padding: 0 10px;
+}
+
+.story h4 {
+	text-align: left;
+	font-size: 1.5rem;
+	color:#274DEA;
+	padding-left: 10px;
+	padding-top: 1px
+}
+
+.story p {
+	padding-left: 10px;
+	font-size: 1.2rem;
+}
+
+.story a {
+	color: #274DEA
+}
+
+.story a:hover {
+	background-color: #274DEA;
+	color: #EBFFDC;
+}
+
+/*Here starts styling for About page (CV was shorter)*/
+
+.CVentry {
+    background-color: #EBFFDC;
+	color: #274DEA;
+}
+
+.CVentry div {
+	border-style: solid;
+	width: 2000px;
+	height: 200px;
+	display: flex;
+	padding-top: 2px;
+}
+
+.CVentry ul {
+	list-style-type: none;
+	display: flex-wrap;
+	justify-content: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.CVentry h4 {
+	text-align: left;
+	font-size: 1.4rem;
+	color:#274DEA;
+	padding-left: 10px;
+	padding-top: 1px;
+}
+
+.CVentry p {
+	text-align: left;
+	font-size: 1.2rem;
+	color:#274DEA;
+	padding-left: 10px;
+	padding-top: 1px
+}
+
+/*Here ends styling for About page*/
+
+.button {
+	background-color: #EBFFDC;
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media (max-width: 600px) {
+	.stories {
+		flex-direction: column;
+	}
+
+	.stories div {
+		width: 90%;
+		margin: 10px 5%;
+	}
+
+	.CVentries {
+		flex-direction: column;
+	}
+
+	.CVentries div{
+		width: 90%;
+		margin: 10px 5%;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+
+}
+
+
+
+/*This is the mobilenav just in case*/
+.mobilenav {
+  display: none;
+  width: 100%;
+  background-color: #274DEA;
+}
+
+.mobilenav > * {
+/*   flex-grow: 1; */
+}
+
+.mobilenav {
+  margin-left: 1rem;
+}
+
+.mobilenav {
+  text-decoration: none;
+}
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+/* Hide hamburger for bigger screens */
+.menu-icon {
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin-right: 2rem;
+}
+
+/*end of mobile nav here*/
+
+
+
+
+
